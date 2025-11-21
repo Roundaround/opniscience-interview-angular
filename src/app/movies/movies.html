@@ -1,0 +1,30 @@
+<a
+  [routerLink]="['/']"
+  class="inline-block px-3 py-2 rounded-xl text-white bg-red-900 hover:bg-red-800 active:bg-red-950"
+  >Home</a
+>
+
+<table>
+  <thead>
+    <tr>
+      <td class="px-2 py-1 font-bold">Title</td>
+      <td class="px-2 py-1 font-bold">Year</td>
+      <td class="px-2 py-1 font-bold">Genre</td>
+      <td class="px-2 py-1 font-bold">Runtime</td>
+      <td class="px-2 py-1 font-bold">Director</td>
+      <td class="px-2 py-1 font-bold">Rating</td>
+    </tr>
+  </thead>
+  <tbody>
+    @for (movie of data(); track movie.title) {
+    <tr>
+      <td class="px-2 py-1">{{ movie.title }}</td>
+      <td class="px-2 py-1">{{ movie.year }}</td>
+      <td class="px-2 py-1">{{ movie.genre }}</td>
+      <td class="px-2 py-1">{{ movie.runtime }}</td>
+      <td class="px-2 py-1">{{ movie.director }}</td>
+      <td class="px-2 py-1">{{ movie.rating }}</td>
+    </tr>
+    }
+  </tbody>
+</table>
