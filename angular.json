@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "opniscience-base": {
+    "opniscience-interview-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "opniscience-base:build:production"
+              "buildTarget": "opniscience-interview-angular:build:production"
             },
             "development": {
-              "buildTarget": "opniscience-base:build:development"
+              "buildTarget": "opniscience-interview-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
